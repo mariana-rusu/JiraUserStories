@@ -1,0 +1,31 @@
+image: python:3.9-alpine
+
+stages:                 # List of stages for jobs, and their order of execution
+    - build
+    - test
+    - deploy
+
+build-job:              # This job runs in the build stage, which runs first.
+    stage: build
+    script:
+        - echo "Setup the environment..."
+        - python3.9 -V
+        - python3.9 -m venv tmp/venv
+        - source tmp/venv/bin/activate
+        - pip install -r requirements.txt
+
+test-job:           # This job runs in the test stage.
+    stage: test           # It only starts when the job in the build stage completes successfully.
+    script:
+        - echo "This job tests something"
+        - python3.9 -m venv tmp/venv
+        - source tmp/venv/bin/activate
+        - pip install -r requirements.txt
+        - python3.9 -m unittest tests/data_access/test_add_method.py
+
+deploy-job:
+    stage: deploy
+    script:
+        - echo "This job deploys"
+
+
