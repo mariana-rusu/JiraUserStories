@@ -22,6 +22,10 @@ test-job:           # This job runs in the test stage.
         - source tmp/venv/bin/activate
         - pip install -r requirements.txt
         - python3.9 -m unittest tests/data_access/test_add_method.py
+        - python3.9 -m unittest tests/data_access/test_delete_method.py
+        - python3.9 -m unittest tests/data_access/test_get_all_method.py
+        - python3.9 -m unittest tests/data_access/test_get_method.py
+        - python3.9 -m unittest tests/data_access/test_update_method.py
 
 deploy-job:
     stage: deploy
