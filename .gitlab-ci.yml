@@ -31,5 +31,9 @@ deploy-job:
     stage: deploy
     script:
         - echo "This job deploys"
+        - python3.9 -m venv tmp/venv
+        - source tmp/venv/bin/activate
+        - pip install -r requirements.txt
+        - python3.9 app.py
 
 
