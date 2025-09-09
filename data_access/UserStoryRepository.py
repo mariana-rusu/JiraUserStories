@@ -9,7 +9,7 @@ class UserStoryRepository(IRepository):
         if dynamodb:
             self.dynamodb = dynamodb
         else:
-            self.dynamodb = boto3.resource('dynamodb')
+            self.dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
 
         self.table = self.dynamodb.Table('UserStories')
         self.user_story_g = UserStoryGenerator()
