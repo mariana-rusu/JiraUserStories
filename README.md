@@ -1,6 +1,6 @@
 # Jira User Stories
 ### Introduction
-Jira User Stories is a REST API used to retrieve a specific or all the existing user stories from the server, save, modify or delete an existing ones.
+Jira User Stories is a REST API used to retrieve a specific or all the existing user stories from the server, save, modify or delete existing ones.
 ### Jira User Stories Features
 * Users can get details of a user story
 * Users can get details of all the user stories
