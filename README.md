@@ -8,9 +8,6 @@ Jira User Stories is a REST API used to retrieve a specific or all the existing 
 * Users can update details on an existing user story
 * User can delete user story
 
-### Usage
-* Run npm start:dev to start the application.
-* Connect to the API using Postman on port 7066.
 ### API Endpoints
 | HTTP Verbs | Endpoints                    | Action                                     |
 |------------|------------------------------|--------------------------------------------|
