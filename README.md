@@ -22,6 +22,7 @@ Jira User Stories is a REST API used to retrieve a specific or all the existing 
 * [Requests](https://pypi.org/project/requests/) The Python requests library is a popular and widely-used third-party library for making HTTP requests. 
 * [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
 * [Unittest](https://docs.python.org/3/library/unittest.html) Python Unittest is a built-in testing framework that provides a set of tools for testing our code's functionality in a more systematic and organized manner.
+* [Behave](https://behave.readthedocs.io/en/latest/) Behave is a Behavior-Driven Development (BDD) framework for Python. It facilitates writing tests in a natural, human-readable language, promoting collaboration among developers, QA, and non-technical stakeholders.
 * [Mock](https://docs.python.org/3/library/unittest.mock-examples.html) Mocking in Python with unittest.mock allows you to simulate complex logic or unpredictable dependencies, such as responses from external services. 
 * [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) Amazon DynamoDB is a managed NoSQL database service provided by Amazon Web Services. It supports key-value and document data structures and is designed to handle a wide range of applications requiring scalability and performance.
 ### Author
